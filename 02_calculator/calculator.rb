@@ -15,3 +15,11 @@ result = 0
     end
 result
 end
+
+def multiply (arr)
+result = 1
+    for value in arr do
+        result+=value
+    end
+result
+end
