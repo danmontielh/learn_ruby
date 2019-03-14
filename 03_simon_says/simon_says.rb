@@ -19,3 +19,7 @@ array_text = []
 array_text.join(" ")
 end
 
+def start_of_word (text, index)
+    word = text.chars
+    word[index-1]
+end
