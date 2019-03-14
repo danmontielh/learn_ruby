@@ -26,3 +26,24 @@ def start_of_word (text, index)
 end
 
 
+def first_word text
+    word = text.split(" ")
+    word[0]
+end
+
+def titleize text 
+    result = []
+    phrase = text.split(" ")
+
+    for word in phrase do
+        if word.length >= 3
+            result.push(word.capitalize)    
+        else
+            result.push(word)   
+        end
+        
+    end
+p result.join(" ")
+end
+
+titleize('war and peace')
