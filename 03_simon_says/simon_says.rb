@@ -36,14 +36,20 @@ def titleize text
     phrase = text.split(" ")
 
     for word in phrase do
-        if word.length >= 3
-            result.push(word.capitalize)    
-        else
-            result.push(word)   
+        if word == "and"
+            result.push(word)    
+        elsif word == "over"
+            result.push(word)
+        elsif word == "the"
+            result.push(word)
+            result[0] = word.capitalize     
+        else 
+        result.push(word.capitalize)
         end
         
     end
-p result.join(" ")
+ result.join(" ")
 end
 
-titleize('war and peace')
+p titleize("the Bridge over the River Kwai")
+
